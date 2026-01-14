@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle, #001e4a 0%, #00122c 100%);
+}
+/*fondo*/
+.contact-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    width: 700px;
+    border-top: 8px solid #d64400; 
+}
+/*titulo*/
+h2 {
+    text-align: center;
+    color: #00122c;
+    margin-bottom: 20px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+/*boton agregar*/
+.btn-add {
+    display: block;
+    text-align: center;
+    background: linear-gradient(to right, #d64400, #ff570a);
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(214, 68, 0, 0.3);
+    transition: all 0.3s ease;
+}
+/*efecto hover add*/
+.btn-add:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(214, 68, 0, 0.4);
+}
+/*espacio de ancho tabla*/
+.contact-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+/*tabla titulos*/
+.contact-table th {
+    background-color: #fcfcfc;
+    color: #00122c;
+    text-align: left;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #eee;
+}
+/*tabla datos*/
+.contact-table td {
+    padding: 18px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #333;   
+}
+/*linea de la izquierda*/
+.contact-table tbody tr:hover td:first-child {
+    border-left: 4px solid #d64400;
+}
+/*linea debjo de nombre y subrayado de nombre y telefono*/
+.contact-table tbody tr:hover td {
+    color: #d64400;
+    border-bottom: 1px solid #d64400;
+    font-weight: 500;
+}
+
