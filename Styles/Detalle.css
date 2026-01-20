@@ -1,0 +1,96 @@
+/* Estilos Base (Iguales a tus otras vistas) */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle, #001e4a 0%, #00122c 100%);
+}
+
+.contact-container {
+    position: relative;
+    background: #ffffff;
+    padding: 40px 30px 30px 30px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    width: 450px; /* Tamaño más compacto para lectura */
+    border-top: 8px solid #d64400; 
+}
+
+/* Encabezado con Botón Volver */
+.back-header {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.btn-back {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    color: #d64400;
+    transform: translateX(-3px);
+}
+
+h2 {
+    text-align: center;
+    color: #00122c;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+/* LISTA DE DETALLES */
+.contact-details-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detail-item {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Pequeño efecto al pasar el mouse sobre un dato */
+.detail-item:hover {
+    border-bottom: 1px solid #d64400;
+}
+
+/* Etiquetas (Nombre Completo, Teléfono, etc.) */
+.detail-label {
+    display: block;
+    color: #d64400; /* Color naranja para resaltar el título del dato */
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+/* Valores (Milton Lara, 3372-7865, etc.) */
+.detail-value {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* CATEGORÍA (Diseño de etiqueta) */
+.category-tag {
+    display: inline-block;
+    background-color: #00122c; /* Fondo oscuro para contraste */
+    color: white !important;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+}
