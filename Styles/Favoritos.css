@@ -19,7 +19,7 @@ body {
 /*titulo*/
 h2 {
     text-align: center;
-    color: #00122c;
+    color: #f5ca0d;
     margin-bottom: 20px;
     font-weight: 800;
     letter-spacing: -0.5px;
@@ -68,32 +68,13 @@ h2 {
 }
 /*linea de la izquierda*/
 .contact-table tbody tr:hover td:first-child {
-    border-left: 4px solid #d64400;
+    border-left: 4px solid #f5ca0d;
 }
 /*linea debjo de nombre y subrayado de nombre y telefono*/
 .contact-table tbody tr:hover td {
-    color: #d64400;
-    border-bottom: 1px solid #d64400;
+    color: #d87a0f;
+    border-bottom: 1px solid #f5ca0d;
     font-weight: 500;
 }
 
-/*favoritos*/
-.btn-fav {
-    background: linear-gradient(to right, #d64400, #ff570a);
-    color: rgb(252, 224, 7);
-    padding: 10px 20px; 
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(214, 68, 0, 0.3);
-    display: table; 
-    margin-left: auto; 
-}
 
-.btn-fav:hover {
-    filter: brightness(1.1);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(214, 68, 0, 0.4);
-}
