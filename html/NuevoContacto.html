@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactoNuevo</title>
+    <link rel="stylesheet" href="../Styles/Nuevo.css">
+</head>
+
+<body>
+    <div class="contact-container">  
+        
+        <h2>Nuevo Contacto</h2>
+
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" placeholder="Ej. Milton Lara" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="text" id="telefono" placeholder="Ej. 3377-7863" required>
+            </div>            
+
+            <div class="form-group">
+                <label for="correo">Correo</label>
+                <input type="text" id="correo" name="correo" placeholder="Ej. angel@gmail.com">
+            </div>      
+            
+            <div class="form-group">
+                <label for="direccion">Direccion</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Ej. zona 11">
+            </div> 
+
+            <div class="form-group">
+                <label for="categoria">Categoría</label>
+                <select id="categoria" name="categoria" class="form-input-select">
+                    <option value="familia">Familia</option>
+                    <option value="trabajo">Trabajo</option>
+                    <option value="amigos">Amigos</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-add">
+                Guardar Contacto
+            </button>
+            
+            <a href="Contactos.html" class="btn-cancel">volver</a>
+        </form>
+    </div>
+</body>
+</html>
