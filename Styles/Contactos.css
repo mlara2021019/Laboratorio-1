@@ -154,6 +154,57 @@ h2 {
     font-weight: bold;
 }
 
+/*pendientes*/
+.navigation-menu {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.btn-nav-todo {
+    background-color: #3498db; /* Color azul */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-nav-todo:hover {
+    background-color: #2980b9;
+}
+
+/* Opcional: Si quieres que el icono dentro del botón sea naranja también */
+.btn-nav-todo::before {
+    content: "📋";
+    filter: sepia(1) saturate(20) hue-rotate(5deg); /* Efecto naranja */
+}
+
+/*lista de pendientes*/
+.btn-list {
+    background: linear-gradient(to right, #d64400, #ff570a);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px; 
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(214, 68, 0, 0.3);
+    display: table; 
+    
+}
+
+.btn-list:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(214, 68, 0, 0.4);
+}
+
 
 
 

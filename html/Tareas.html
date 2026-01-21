@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Pendientes</title>
+    <link rel="stylesheet" href="../Styles/Tareas.css"> 
+</head>
+
+<body>
+    <div class="contact-container">
+        <h2>Mi Lista de Pendientes</h2>
+        
+        <div style="margin-bottom: 20px; display: flex; gap: 10px;">
+            <input type="text" id="nuevaTarea" placeholder="¿Qué hay que hacer?" style="flex: 2; padding: 10px;">
+            <select id="prioridadTarea" style="flex: 1; padding: 10px;">
+                <option value="1">Alta (1)</option>
+                <option value="2">Media (2)</option>
+                <option value="3">Baja (3)</option>
+            </select>
+            <button onclick="agregarTarea()" class="btn-add" style="margin:0;">+ Agregar</button>
+        </div>
+
+        <table class="contact-table">
+            <thead>
+                <tr>
+                    <th>Prioridad</th>
+                    <th>Tarea</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="listaTareas">
+                </tbody>
+        </table>
+        <br>
+        <a href="Contactos.html" class="btn-add">Volver a Contactos</a>
+    </div>
+
+    <script src="../JS/tareas.js"></script>
+</body>
+</html>
