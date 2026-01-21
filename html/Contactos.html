@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactos</title>
     <link rel="stylesheet" href="../Styles/Contactos.css">
 </head>
+
 <body>
     <div class="contact-container">
+        <div class="user-menu-container">
+            <button id="btnUsuario" class="btn-session">
+                👤 Ver Sesión
+            </button>
+
+            <div id="panelUsuario" class="user-panel">
+                <p class="user-info-text"><strong>Usuario:</strong> <span id="infoUser"></span></p>
+                <p class="user-info-text"><strong>Contraseña:</strong> <span id="infoPass"></span></p>
+                <hr class="panel-divider">
+                <button onclick="cerrarSesion()" class="btn-logout">Cerrar Sesión</button>
+            </div>
+        </div>
         <h2>Mis Contactos</h2>
+
         <a href="NuevoContacto.html" class="btn-add">+ Agregar Nuevo Contacto</a>
         
-        
-
-
         <table class="contact-table">
             <thead>
                 <tr>
@@ -29,7 +41,7 @@
                 </tr>
                 <tr onclick="location.href='Detalles2.html'">
                     <td>Sebastian Oxcal</td>
-                    <td>3569-8963</td>                
+                    <td>3569-8963</td>
                 </tr>
                 <tr onclick="location.href='Detalles3.html'">
                     <td>Joaquin Estrada</td>
@@ -43,10 +55,12 @@
                     <td>Ezequiel Ruano</td>
                     <td>5783-3372</td>
                 </tr>
-                
+
             </tbody>
         </table>
         <a href="Favoritos.html" class="btn-fav">★ Favoritos</a>
     </div>
+    <script src="../JS/script.js"></script>
 </body>
+
 </html>

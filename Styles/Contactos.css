@@ -97,3 +97,64 @@ h2 {
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(214, 68, 0, 0.4);
 }
+
+/*ver sesion*/
+/* Contenedor general en la esquina arriba*/
+.user-menu-container {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    text-align: right;    
+}
+
+/*estilo del panel desplegable */
+.user-panel {
+    display: none;
+    margin-top: 10px;
+    padding: 15px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    color: #333;
+    min-width: 180px;
+    text-align: left;
+}
+
+.user-info-text {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/*botón de Cerrar Sesión */
+.btn-logout {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    width: 100%;
+}
+
+.btn-logout:hover {
+    background-color: #c0392b;
+}
+
+.btn-session {
+    display: none; 
+    width: 100%;   
+    padding: 15px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+
+
